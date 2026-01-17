@@ -1,126 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Tutorial - Home</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        nav {
-            background: #34495e;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: #ecf0f1;
-            border-radius: 5px;
-        }
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        code {
-            background: #333;
-            color: #0f0;
-            padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-        }
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Advanced Teacher Notes</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial, sans-serif;line-height:1.8;color:#333;}
+header{background:#1f2933;color:white;padding:2.5rem;text-align:center;}
+nav{background:#374151;padding:1rem;position:sticky;top:0;}
+nav a{color:white;text-decoration:none;margin:0 0.4rem;font-size:13px;}
+nav a:hover{text-decoration:underline;}
+main{max-width:1300px;margin:2rem auto;padding:0 1rem;}
+section{margin:2rem 0;padding:1.8rem;background:#eef2f7;border-radius:6px;}
+h2{color:#1f2933;margin-bottom:1rem;}
+h3{color:#374151;margin-top:1rem;}
+code,pre{background:#111;color:#0f0;padding:8px;border-radius:4px;display:block;margin:8px 0;overflow:auto;}
+ul{margin-left:20px;}
+footer{background:#1f2933;color:white;text-align:center;padding:1rem;margin-top:2rem;}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>HTML Tutorial</h1>
-        <p>Learn the fundamentals of web development</p>
-    </header>
 
-    <nav>
-        <a href="#basics">Basics</a>
-        <a href="#elements">Elements</a>
-        <a href="#forms">Forms</a>
-        <a href="#semantics">Semantics</a>
-    </nav>
+<header>
+<h1>HTML Advanced Teacher Notes</h1>
+<p>Deep Explanation • Classroom Ready • Single Page</p>
+</header>
 
-    <main>
-        <section id="basics">
-            <h2>HTML Basics</h2>
-            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It uses tags to structure content.</p>
-            <code>&lt;!DOCTYPE html&gt;</code> - Declares the document type
-        </section>
+<nav>
+<a href="#basics">Basics</a>
+<a href="#syntax">Syntax</a>
+<a href="#structure">Structure</a>
+<a href="#text">Text</a>
+<a href="#links">Links</a>
+<a href="#images">Images</a>
+<a href="#lists">Lists</a>
+<a href="#tables">Tables</a>
+<a href="#forms">Forms</a>
+<a href="#semantic">Semantic</a>
+<a href="#media">Media</a>
+<a href="#meta">Meta</a>
+<a href="#layout">Layout</a>
+<a href="#seo">SEO</a>
+<a href="#access">Accessibility</a>
+<a href="#responsive">Responsive</a>
+</nav>
 
-        <section id="elements">
-            <h2>Common Elements</h2>
-            <ul>
-                <li><code>&lt;h1&gt;</code> - Heading level 1</li>
-                <li><code>&lt;p&gt;</code> - Paragraph</li>
-                <li><code>&lt;a&gt;</code> - Hyperlink</li>
-                <li><code>&lt;img&gt;</code> - Image</li>
-                <li><code>&lt;div&gt;</code> - Container</li>
-            </ul>
-        </section>
+<main>
 
-        <section id="forms">
-            <h2>HTML Forms</h2>
-            <p>Forms allow users to submit data. Key elements include:</p>
-            <ul>
-                <li><code>&lt;form&gt;</code> - Form container</li>
-                <li><code>&lt;input&gt;</code> - Input field</li>
-                <li><code>&lt;button&gt;</code> - Clickable button</li>
-                <li><code>&lt;textarea&gt;</code> - Multi-line text</li>
-            </ul>
-        </section>
+<section id="basics">
+<h2>1. HTML Basics</h2>
+<p><b>HTML (HyperText Markup Language)</b> is the foundation of all websites. It defines the structure, meaning, and organization of web content.</p>
 
-        <section id="semantics">
-            <h2>Semantic HTML</h2>
-            <p>Semantic tags describe content meaning:</p>
-            <ul>
-                <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code></li>
-                <li><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code></li>
-                <li><code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code></li>
-            </ul>
-        </section>
-    </main>
+<h3>Key Points</h3>
+<ul>
+<li>HTML uses predefined tags.</li>
+<li>HTML files are saved with <b>.html</b> extension.</li>
+<li>Browsers interpret HTML and render pages.</li>
+<li>HTML works with CSS (design) and JavaScript (logic).</li>
+</ul>
 
-    <footer>
-        <p>&copy; 2024 HTML Tutorial. All rights reserved.</p>
-    </footer>
+<h3>Example</h3>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+Hello World
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+
+<section id="syntax">
+<h2>2. HTML Syntax Rules</h2>
+<ul>
+<li>Tags must open and close properly.</li>
+<li>Attributes must be inside opening tag.</li>
+<li>Tags are nested correctly.</li>
+<li>Lowercase is recommended.</li>
+</ul>
+
+<pre>
+&lt;p class="text"&gt;Hello&lt;/p&gt;
+</pre>
+</section>
+
+<section id="structure">
+<h2>3. Document Structure</h2>
+<p>Every HTML document follows a hierarchical structure.</p>
+
+<ul>
+<li><b>&lt;html&gt;</b> → Root container.</li>
+<li><b>&lt;head&gt;</b> → SEO, metadata, styles.</li>
+<li><b>&lt;body&gt;</b> → Visible UI.</li>
+</ul>
+
+<pre>
+&lt;html&gt;
+ &lt;head&gt;&lt;title&gt;Page&lt;/title&gt;&lt;/head&gt;
+ &lt;body&gt;Content&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+
+<section id="text">
+<h2>4. Text & Formatting</h2>
+<h3>Text Tags</h3>
+<ul>
+<li>Headings control hierarchy.</li>
+<li>Paragraphs separate content.</li>
+<li>Formatting improves readability.</li>
+</ul>
+
+<pre>
+&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;b&gt;Bold&lt;/b&gt;
+</pre>
+</section>
+
+<section id="links">
+<h2>5. Hyperlinks</h2>
+<p>Links allow navigation between pages.</p>
+
+<ul>
+<li>Absolute URL – full web address.</li>
+<li>Relative URL – local file.</li>
+<li>target="_blank" opens new tab.</li>
+</ul>
+
+<pre>
+&lt;a href="page.html"&gt;Local Page&lt;/a&gt;
+</pre>
+</section>
+
+<section id="images">
+<h2>6. Images</h2>
+<p>Images enhance visual communication.</p>
+
+<ul>
+<li>Use optimized images.</li>
+<li>Alt improves accessibility.</li>
+<li>Width/height maintain layout.</li>
+</ul>
+
+<pre>
+&lt;img src="logo.png" alt="Company Logo" width="120"&gt;
+</pre>
+</section>
+
+<section id="lists">
+<h2>7. Lists</h2>
+<p>Used to display grouped data.</p>
+
+<ul>
+<li>ul – unordered list.</li>
+<li>ol – ordered list.</li>
+<li>dl – description list.</li>
+</ul>
+
+<pre>
+&lt;ol&gt;&lt;li&gt;Step 1&lt;/li&gt;&lt;/ol&gt;
+</pre>
+</section>
+
+<section id="tables">
+<h2>8. Tables</h2>
+<p>Tables represent structured data.</p>
+
+<ul>
+<li>thead, tbody organize table.</li>
+<li>Border collapse improves design.</li>
+</ul>
+
+<pre>
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</section>
+
+<section id="forms">
+<h2>9. Forms</h2>
+<p>Forms enable interaction.</p>
+
+<ul>
+<li>GET vs POST method.</li>
+<li>Input validation.</li>
+<li>Labels improve usability.</li>
+</ul>
+
+<pre>
+&lt;input type="email" required&gt;
+</pre>
+</section>
+
+<section id="semantic">
+<h2>10. Semantic HTML</h2>
+<p>Semantic tags provide meaning.</p>
+
+<ul>
+<li>Improves SEO.</li>
+<li>Improves accessibility.</li>
+</ul>
+
+<pre>
+&lt;article&gt;Blog Post&lt;/article&gt;
+</pre>
+</section>
+
+<section id="media">
+<h2>11. Media</h2>
+<p>Embed multimedia content.</p>
+<pre>
+&lt;audio controls&gt;&lt;/audio&gt;
+</pre>
+</section>
+
+<section id="meta">
+<h2>12. Meta Tags</h2>
+<p>Define browser behavior.</p>
+
+<ul>
+<li>charset – encoding.</li>
+<li>viewport – mobile scaling.</li>
+</ul>
+</section>
+
+<section id="layout">
+<h2>13. Layout</h2>
+<p>Div and span create layouts.</p>
+</section>
+
+<section id="seo">
+<h2>14. SEO Basics</h2>
+<p>Search engine visibility optimization.</p>
+</section>
+
+<section id="access">
+<h2>15. Accessibility</h2>
+<p>Inclusive design principles.</p>
+</section>
+
+<section id="responsive">
+<h2>16. Responsive Design</h2>
+<p>Mobile friendly layouts.</p>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 HTML Teacher Notes</p>
+</footer>
+
 </body>
 </html>
