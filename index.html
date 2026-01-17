@@ -30,31 +30,44 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://github.shivampatanwar.com/html_tutorial">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="HTML Tutorial for Students">
-<meta name="twitter:description" content="HTML learning with input and output examples for beginners.">
-
-<!-- Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "HTML Tutorial by Shivam Patanwar",
-  "url": "https://github.shivampatanwar.com/html_tutorial",
-  "description": "Student friendly HTML tutorial with input and output examples."
-}
-</script>
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:Arial, sans-serif;line-height:1.8;background:#f4f6f8;}
 header{background:#1f2933;color:white;padding:25px;text-align:center;}
-section{background:white;margin:25px auto;padding:20px;max-width:1200px;border-radius:6px;}
+
+nav{
+  background:#374151;
+  padding:12px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  text-align:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 8px;
+  font-size:14px;
+  font-weight:bold;
+}
+nav a:hover{ text-decoration:underline; }
+
+section{
+  background:white;
+  margin:25px auto;
+  padding:20px;
+  max-width:1200px;
+  border-radius:6px;
+}
 h2{color:#1f2933;margin-bottom:10px;}
 label{font-weight:bold;display:block;margin-top:10px;}
 pre{background:#111;color:#0f0;padding:10px;border-radius:4px;overflow:auto;}
-.output{background:#eef2f7;padding:12px;margin-top:8px;border-left:5px solid #1f2933;}
+.output{
+  background:#eef2f7;
+  padding:12px;
+  margin-top:8px;
+  border-left:5px solid #1f2933;
+}
 footer{background:#1f2933;color:white;text-align:center;padding:15px;}
 </style>
 </head>
@@ -63,94 +76,91 @@ footer{background:#1f2933;color:white;text-align:center;padding:15px;}
 
 <header>
 <h1>HTML Tutorial for Students</h1>
-<p>Learn HTML with Input & Output Examples</p>
+<p>Input & Output Based Learning</p>
 <p>github.shivampatanwar.com/html_tutorial</p>
 </header>
 
-<!-- 1 -->
-<section>
-<h2>1. Basic HTML Page</h2>
+<!-- ✅ NAVIGATION BAR -->
+<nav>
+<a href="#basic">Basic</a>
+<a href="#heading">Heading</a>
+<a href="#paragraph">Paragraph</a>
+<a href="#formatting">Formatting</a>
+<a href="#link">Link</a>
+<a href="#image">Image</a>
+<a href="#list">List</a>
+<a href="#table">Table</a>
+<a href="#form">Form</a>
+<a href="#layout">Layout</a>
+<a href="#media">Media</a>
+<a href="#meta">Meta</a>
+</nav>
+
+<!-- ================= CONTENT ================= -->
+
+<!-- BASIC -->
+<section id="basic">
+<h2>1. Basic HTML</h2>
 <label>INPUT</label>
-<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;Hello World&lt;/body&gt;
-&lt;/html&gt;
-</pre>
+<pre>&lt;body&gt;Hello World&lt;/body&gt;</pre>
 <label>OUTPUT</label>
 <div class="output">Hello World</div>
 </section>
 
-<!-- 2 -->
-<section>
+<!-- HEADING -->
+<section id="heading">
 <h2>2. Headings</h2>
 <label>INPUT</label>
 <pre>
 &lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
 </pre>
 <label>OUTPUT</label>
 <div class="output">
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
-<h3>Heading 3</h3>
 </div>
 </section>
 
-<!-- 3 -->
-<section>
-<h2>3. Paragraph & Line Break</h2>
+<!-- PARAGRAPH -->
+<section id="paragraph">
+<h2>3. Paragraph</h2>
 <label>INPUT</label>
-<pre>
-&lt;p&gt;This is paragraph&lt;/p&gt;
-Line&lt;br&gt;Break
-</pre>
+<pre>&lt;p&gt;This is paragraph&lt;/p&gt;</pre>
 <label>OUTPUT</label>
-<div class="output">
-<p>This is paragraph</p>
-Line<br>Break
-</div>
+<div class="output"><p>This is paragraph</p></div>
 </section>
 
-<!-- 4 -->
-<section>
-<h2>4. Text Formatting</h2>
+<!-- FORMATTING -->
+<section id="formatting">
+<h2>4. Formatting</h2>
 <label>INPUT</label>
-<pre>
-&lt;b&gt;Bold&lt;/b&gt;
-&lt;i&gt;Italic&lt;/i&gt;
-&lt;u&gt;Underline&lt;/u&gt;
-</pre>
+<pre>&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italic&lt;/i&gt;</pre>
 <label>OUTPUT</label>
-<div class="output">
-<b>Bold</b><br>
-<i>Italic</i><br>
-<u>Underline</u>
-</div>
+<div class="output"><b>Bold</b> <i>Italic</i></div>
 </section>
 
-<!-- 5 -->
-<section>
-<h2>5. Link</h2>
+<!-- LINK -->
+<section id="link">
+<h2>5. Hyperlink</h2>
 <label>INPUT</label>
 <pre>&lt;a href="#"&gt;Click Here&lt;/a&gt;</pre>
 <label>OUTPUT</label>
 <div class="output"><a href="#">Click Here</a></div>
 </section>
 
-<!-- 6 -->
-<section>
+<!-- IMAGE -->
+<section id="image">
 <h2>6. Image</h2>
 <label>INPUT</label>
 <pre>&lt;img src="https://via.placeholder.com/120"&gt;</pre>
 <label>OUTPUT</label>
-<div class="output"><img src="https://via.placeholder.com/120" title="a"></div>
+<div class="output"><img src="https://via.placeholder.com/120" title="4"></div>
 </section>
 
-<!-- 7 -->
-<section>
-<h2>7. Lists</h2>
+<!-- LIST -->
+<section id="list">
+<h2>7. List</h2>
 <label>INPUT</label>
 <pre>
 &lt;ul&gt;
@@ -167,8 +177,8 @@ Line<br>Break
 </div>
 </section>
 
-<!-- 8 -->
-<section>
+<!-- TABLE -->
+<section id="table">
 <h2>8. Table</h2>
 <label>INPUT</label>
 <pre>
@@ -186,81 +196,46 @@ Line<br>Break
 </div>
 </section>
 
-<!-- 9 -->
-<section>
+<!-- FORM -->
+<section id="form">
 <h2>9. Input Field</h2>
 <label>INPUT</label>
 <pre>&lt;input type="text" placeholder="Enter Name"&gt;</pre>
 <label>OUTPUT</label>
-<div class="output">
-<input type="text" placeholder="Enter Name">
-</div>
+<div class="output"><input type="text" placeholder="Enter Name"></div>
 </section>
 
-<!-- 10 -->
-<section>
-<h2>10. Button</h2>
+<!-- LAYOUT -->
+<section id="layout">
+<h2>10. Div & Span</h2>
 <label>INPUT</label>
-<pre>&lt;button&gt;Submit&lt;/button&gt;</pre>
+<pre>&lt;div&gt;Block&lt;/div&gt; &lt;span&gt;Inline&lt;/span&gt;</pre>
 <label>OUTPUT</label>
-<div class="output">
-<button>Submit</button>
-</div>
+<div class="output"><div>Block</div><span>Inline</span></div>
 </section>
 
-<!-- 11 -->
-<section>
-<h2>11. Div & Span</h2>
+<!-- MEDIA -->
+<section id="media">
+<h2>11. Audio & Video</h2>
 <label>INPUT</label>
 <pre>
-&lt;div&gt;Block&lt;/div&gt;
-&lt;span&gt;Inline&lt;/span&gt;
+&lt;audio controls&gt;&lt;/audio&gt;
+&lt;video width="200" controls&gt;&lt;/video&gt;
 </pre>
 <label>OUTPUT</label>
 <div class="output">
-<div>Block</div>
-<span>Inline</span>
-</div>
-</section>
-
-<!-- 12 -->
-<section>
-<h2>12. Audio</h2>
-<label>INPUT</label>
-<pre>&lt;audio controls&gt;&lt;/audio&gt;</pre>
-<label>OUTPUT</label>
-<div class="output">
-<audio controls></audio>
-</div>
-</section>
-
-<!-- 13 -->
-<section>
-<h2>13. Video</h2>
-<label>INPUT</label>
-<pre>&lt;video width="200" controls&gt;&lt;/video&gt;</pre>
-<label>OUTPUT</label>
-<div class="output">
+<audio controls></audio><br>
 <video width="200" controls></video>
 </div>
 </section>
 
-<!-- 14 -->
-<section>
-<h2>14. Comment</h2>
-<label>INPUT</label>
-<pre>&lt;!-- This is a comment --&gt;</pre>
-<label>OUTPUT</label>
-<div class="output">No visible output</div>
-</section>
-
-<!-- 15 -->
-<section>
-<h2>15. Meta Tag</h2>
+<!-- META -->
+<section id="meta">
+<h2>12. Meta Tag</h2>
 <label>INPUT</label>
 <pre>&lt;meta charset="UTF-8"&gt;</pre>
 <label>OUTPUT</label>
-<div class="output">Used by browser internally</div>
+<div class="output">No visible output</div>
 </section>
 
 <footer>
