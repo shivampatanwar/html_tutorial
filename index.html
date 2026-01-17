@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML Advanced Teacher Notes</title>
+<title>HTML Advanced Teacher Notes – With Output</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -18,6 +18,12 @@ h2{color:#1f2933;margin-bottom:1rem;}
 h3{color:#374151;margin-top:1rem;}
 code,pre{background:#111;color:#0f0;padding:8px;border-radius:4px;display:block;margin:8px 0;overflow:auto;}
 ul{margin-left:20px;}
+.output{
+    background:#ffffff;
+    padding:12px;
+    margin-top:10px;
+    border-left:4px solid #1f2933;
+}
 footer{background:#1f2933;color:white;text-align:center;padding:1rem;margin-top:2rem;}
 </style>
 </head>
@@ -26,7 +32,7 @@ footer{background:#1f2933;color:white;text-align:center;padding:1rem;margin-top:
 
 <header>
 <h1>HTML Advanced Teacher Notes</h1>
-<p>Deep Explanation • Classroom Ready • Single Page</p>
+<p>Code + Live Output | Single Page</p>
 </header>
 
 <nav>
@@ -50,203 +56,147 @@ footer{background:#1f2933;color:white;text-align:center;padding:1rem;margin-top:
 
 <main>
 
+<!-- BASICS -->
 <section id="basics">
 <h2>1. HTML Basics</h2>
-<p><b>HTML (HyperText Markup Language)</b> is the foundation of all websites. It defines the structure, meaning, and organization of web content.</p>
-
-<h3>Key Points</h3>
-<ul>
-<li>HTML uses predefined tags.</li>
-<li>HTML files are saved with <b>.html</b> extension.</li>
-<li>Browsers interpret HTML and render pages.</li>
-<li>HTML works with CSS (design) and JavaScript (logic).</li>
-</ul>
-
-<h3>Example</h3>
-<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-Hello World
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
+<pre>&lt;body&gt;Hello World&lt;/body&gt;</pre>
+<div class="output">Hello World</div>
 </section>
 
+<!-- SYNTAX -->
 <section id="syntax">
-<h2>2. HTML Syntax Rules</h2>
-<ul>
-<li>Tags must open and close properly.</li>
-<li>Attributes must be inside opening tag.</li>
-<li>Tags are nested correctly.</li>
-<li>Lowercase is recommended.</li>
-</ul>
-
-<pre>
-&lt;p class="text"&gt;Hello&lt;/p&gt;
-</pre>
+<h2>2. HTML Syntax</h2>
+<pre>&lt;p class="text"&gt;Hello&lt;/p&gt;</pre>
+<div class="output"><p>Hello</p></div>
 </section>
 
+<!-- STRUCTURE -->
 <section id="structure">
 <h2>3. Document Structure</h2>
-<p>Every HTML document follows a hierarchical structure.</p>
-
-<ul>
-<li><b>&lt;html&gt;</b> → Root container.</li>
-<li><b>&lt;head&gt;</b> → SEO, metadata, styles.</li>
-<li><b>&lt;body&gt;</b> → Visible UI.</li>
-</ul>
-
-<pre>
-&lt;html&gt;
- &lt;head&gt;&lt;title&gt;Page&lt;/title&gt;&lt;/head&gt;
- &lt;body&gt;Content&lt;/body&gt;
-&lt;/html&gt;
-</pre>
+<pre>&lt;title&gt;My Page&lt;/title&gt;</pre>
+<div class="output">Browser Tab Title: <b>My Page</b></div>
 </section>
 
+<!-- TEXT -->
 <section id="text">
-<h2>4. Text & Formatting</h2>
-<h3>Text Tags</h3>
-<ul>
-<li>Headings control hierarchy.</li>
-<li>Paragraphs separate content.</li>
-<li>Formatting improves readability.</li>
-</ul>
-
+<h2>4. Text Formatting</h2>
 <pre>
 &lt;h1&gt;Main Title&lt;/h1&gt;
-&lt;p&gt;Description&lt;/p&gt;
-&lt;b&gt;Bold&lt;/b&gt;
+&lt;p&gt;Paragraph Text&lt;/p&gt;
+&lt;b&gt;Bold Text&lt;/b&gt;
 </pre>
+<div class="output">
+<h1>Main Title</h1>
+<p>Paragraph Text</p>
+<b>Bold Text</b>
+</div>
 </section>
 
+<!-- LINKS -->
 <section id="links">
 <h2>5. Hyperlinks</h2>
-<p>Links allow navigation between pages.</p>
-
-<ul>
-<li>Absolute URL – full web address.</li>
-<li>Relative URL – local file.</li>
-<li>target="_blank" opens new tab.</li>
-</ul>
-
-<pre>
-&lt;a href="page.html"&gt;Local Page&lt;/a&gt;
-</pre>
+<pre>&lt;a href="#"&gt;Click Here&lt;/a&gt;</pre>
+<div class="output"><a href="#">Click Here</a></div>
 </section>
 
+<!-- IMAGES -->
 <section id="images">
 <h2>6. Images</h2>
-<p>Images enhance visual communication.</p>
-
-<ul>
-<li>Use optimized images.</li>
-<li>Alt improves accessibility.</li>
-<li>Width/height maintain layout.</li>
-</ul>
-
-<pre>
-&lt;img src="logo.png" alt="Company Logo" width="120"&gt;
-</pre>
+<pre>&lt;img src="https://via.placeholder.com/120"&gt;</pre>
+<div class="output"><img src="https://via.placeholder.com/120" title="sfsf"></div>
 </section>
 
+<!-- LISTS -->
 <section id="lists">
 <h2>7. Lists</h2>
-<p>Used to display grouped data.</p>
-
-<ul>
-<li>ul – unordered list.</li>
-<li>ol – ordered list.</li>
-<li>dl – description list.</li>
-</ul>
-
 <pre>
-&lt;ol&gt;&lt;li&gt;Step 1&lt;/li&gt;&lt;/ol&gt;
+&lt;ol&gt;
+ &lt;li&gt;Step One&lt;/li&gt;
+ &lt;li&gt;Step Two&lt;/li&gt;
+&lt;/ol&gt;
 </pre>
+<div class="output">
+<ol>
+<li>Step One</li>
+<li>Step Two</li>
+</ol>
+</div>
 </section>
 
+<!-- TABLES -->
 <section id="tables">
 <h2>8. Tables</h2>
-<p>Tables represent structured data.</p>
-
-<ul>
-<li>thead, tbody organize table.</li>
-<li>Border collapse improves design.</li>
-</ul>
-
 <pre>
-&lt;table&gt;
+&lt;table border="1"&gt;
 &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ravi&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 </pre>
+<div class="output">
+<table border="1">
+<tr><th>Name</th></tr>
+<tr><td>Ravi</td></tr>
+</table>
+</div>
 </section>
 
+<!-- FORMS -->
 <section id="forms">
 <h2>9. Forms</h2>
-<p>Forms enable interaction.</p>
-
-<ul>
-<li>GET vs POST method.</li>
-<li>Input validation.</li>
-<li>Labels improve usability.</li>
-</ul>
-
-<pre>
-&lt;input type="email" required&gt;
-</pre>
+<pre>&lt;input type="email" placeholder="Enter Email"&gt;</pre>
+<div class="output"><input type="email" placeholder="Enter Email"></div>
 </section>
 
+<!-- SEMANTIC -->
 <section id="semantic">
-<h2>10. Semantic HTML</h2>
-<p>Semantic tags provide meaning.</p>
-
-<ul>
-<li>Improves SEO.</li>
-<li>Improves accessibility.</li>
-</ul>
-
-<pre>
-&lt;article&gt;Blog Post&lt;/article&gt;
-</pre>
+<h2>10. Semantic</h2>
+<pre>&lt;article&gt;Blog Content&lt;/article&gt;</pre>
+<div class="output"><article>Blog Content</article></div>
 </section>
 
+<!-- MEDIA -->
 <section id="media">
 <h2>11. Media</h2>
-<p>Embed multimedia content.</p>
-<pre>
-&lt;audio controls&gt;&lt;/audio&gt;
-</pre>
+<pre>&lt;audio controls&gt;&lt;/audio&gt;</pre>
+<div class="output"><audio controls></audio></div>
 </section>
 
+<!-- META -->
 <section id="meta">
 <h2>12. Meta Tags</h2>
-<p>Define browser behavior.</p>
-
-<ul>
-<li>charset – encoding.</li>
-<li>viewport – mobile scaling.</li>
-</ul>
+<pre>&lt;meta charset="UTF-8"&gt;</pre>
+<div class="output">No visible output (browser configuration only)</div>
 </section>
 
+<!-- LAYOUT -->
 <section id="layout">
 <h2>13. Layout</h2>
-<p>Div and span create layouts.</p>
+<pre>&lt;div&gt;Block&lt;/div&gt; &lt;span&gt;Inline&lt;/span&gt;</pre>
+<div class="output">
+<div>Block</div>
+<span>Inline</span>
+</div>
 </section>
 
+<!-- SEO -->
 <section id="seo">
-<h2>14. SEO Basics</h2>
-<p>Search engine visibility optimization.</p>
+<h2>14. SEO</h2>
+<pre>&lt;meta name="description" content="My Website"&gt;</pre>
+<div class="output">Visible only in search engines</div>
 </section>
 
+<!-- ACCESSIBILITY -->
 <section id="access">
 <h2>15. Accessibility</h2>
-<p>Inclusive design principles.</p>
+<pre>&lt;img alt="Sample Image"&gt;</pre>
+<div class="output">Alt text appears if image fails</div>
 </section>
 
+<!-- RESPONSIVE -->
 <section id="responsive">
 <h2>16. Responsive Design</h2>
-<p>Mobile friendly layouts.</p>
+<pre>&lt;meta name="viewport"&gt;</pre>
+<div class="output">Page adapts to mobile screen</div>
 </section>
 
 </main>
