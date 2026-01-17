@@ -1,329 +1,446 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+<meta charset="UTF-8">
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title -->
-    <title>
-      HTML Tutorial for Students | Input Output Examples | Shivam Patanwar
-    </title>
+<!-- SEO -->
+<title>HTML Tutorial for Students | Input Output Examples | Shivam Patanwar</title>
+<meta name="description" content="Complete HTML tutorial for students with input and output examples. Learn HTML tags, forms, tables, images, media, semantic tags, SEO and responsive design.">
+<meta name="keywords" content="HTML tutorial, HTML input output, HTML for students, learn HTML, web development basics">
+<meta name="author" content="Shivam Patanwar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.shivampatanwar.com/html_tutorial">
 
-    <!-- SEO Description -->
-    <meta
-      name="description"
-      content="Learn HTML step by step with clear input and output examples. Covers HTML basics, tags, forms, tables, lists, images, media, semantic tags and responsive concepts for students."
-    />
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Arial, sans-serif;line-height:1.8;background:#f4f6f8;}
+header{background:#1f2933;color:white;padding:25px;text-align:center;}
 
-    <!-- Keywords -->
-    <meta
-      name="keywords"
-      content="HTML tutorial, learn html, html for students, html input output, html examples, html basics, web development beginner"
-    />
+nav{
+  background:#374151;
+  padding:12px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  text-align:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 6px;
+  font-size:13px;
+  font-weight:bold;
+}
+nav a:hover{ text-decoration:underline; }
 
-    <!-- Author -->
-    <meta name="author" content="Shivam Patanwar" />
+section{
+  background:white;
+  margin:25px auto;
+  padding:20px;
+  max-width:1200px;
+  border-radius:6px;
+  scroll-margin-top:90px;
+}
 
-    <!-- Robots -->
-    <meta name="robots" content="index, follow" />
+h2{color:#1f2933;margin-bottom:10px;}
+label{font-weight:bold;display:block;margin-top:10px;}
+pre{background:#111;color:#0f0;padding:10px;border-radius:4px;overflow:auto;}
+.output{
+  background:#eef2f7;
+  padding:12px;
+  margin-top:8px;
+  border-left:5px solid #1f2933;
+}
+footer{background:#1f2933;color:white;text-align:center;padding:15px;}
+</style>
+</head>
 
-    <!-- Canonical -->
-    <link
-      rel="canonical"
-      href="https://github.shivampatanwar.com/html_tutorial"
-    />
+<body>
 
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="HTML Tutorial for Students | Input Output Examples"
-    />
-    <meta
-      property="og:description"
-      content="Learn HTML step by step with practical examples and outputs. Perfect for beginners and students."
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://github.shivampatanwar.com/html_tutorial"
-    />
+<header>
+<h1>HTML Tutorial for Students</h1>
+<p>Complete Input & Output Learning</p>
+<p>github.shivampatanwar.com/html_tutorial</p>
+</header>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+<!-- NAVIGATION -->
+<nav>
+<a href="#basic">Basic</a>
+<a href="#heading">Heading</a>
+<a href="#paragraph">Paragraph</a>
+<a href="#format">Formatting</a>
+<a href="#link">Link</a>
+<a href="#image">Image</a>
+<a href="#list">List</a>
+<a href="#table">Table</a>
+<a href="#form">Form</a>
+<a href="#input">Inputs</a>
+<a href="#layout">Layout</a>
+<a href="#semantic">Semantic</a>
+<a href="#media">Media</a>
+<a href="#iframe">Iframe</a>
+<a href="#meta">Meta</a>
+<a href="#seo">SEO</a>
+<a href="#responsive">Responsive</a>
+<a href="#desc-list">Desc</a>
+<a href="#select">Select</a>
+<a href="#datalist">Datalist</a>
+<a href="#fieldset">Fieldset</a>
+<a href="#validation">Validation</a>
+<a href="#progress">Progress</a>
+<a href="#details">Details</a>
+<a href="#canvas">Canvas</a>
+<a href="#svg">SVG</a>
+<a href="#entities">Entities</a>
+<a href="#editable">Editable</a>
+<a href="#download">Download</a>
+<a href="#target">Target</a>
+<a href="#pre">Pre</a>
+<a href="#code">Code</a>
+<a href="#time">Time</a>
+<a href="#mark">Mark</a>
+</nav>
 
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.8;
-        background: #f4f6f8;
-      }
+<!-- BASIC -->
+<section id="basic">
+<h2>1. Basic HTML</h2>
+<label>INPUT</label>
+<pre>&lt;body&gt;Hello World&lt;/body&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">Hello World</div>
+</section>
 
-      header {
-        background: #1f2933;
-        color: white;
-        padding: 25px;
-        text-align: center;
-      }
+<!-- HEADING -->
+<section id="heading">
+<h2>2. Headings</h2>
+<label>INPUT</label>
+<pre>&lt;h1&gt;Heading 1&lt;/h1&gt; &lt;h2&gt;Heading 2&lt;/h2&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><h1>Heading 1</h1><h2>Heading 2</h2></div>
+</section>
 
-      nav {
-        background: #374151;
-        padding: 12px;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        text-align: center;
-      }
+<!-- PARAGRAPH -->
+<section id="paragraph">
+<h2>3. Paragraph</h2>
+<label>INPUT</label>
+<pre>&lt;p&gt;This is paragraph&lt;/p&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><p>This is paragraph</p></div>
+</section>
 
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 8px;
-        font-size: 14px;
-        font-weight: bold;
-      }
+<!-- FORMATTING -->
+<section id="format">
+<h2>4. Formatting</h2>
+<label>INPUT</label>
+<pre>&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italic&lt;/i&gt; &lt;u&gt;Underline&lt;/u&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><b>Bold</b> <i>Italic</i> <u>Underline</u></div>
+</section>
 
-      nav a:hover {
-        text-decoration: underline;
-      }
+<!-- LINK -->
+<section id="link">
+<h2>5. Hyperlink</h2>
+<label>INPUT</label>
+<pre>&lt;a href="#"&gt;Click Here&lt;/a&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><a href="#">Click Here</a></div>
+</section>
 
-      section {
-        background: white;
-        margin: 25px auto;
-        padding: 20px;
-        max-width: 1200px;
-        border-radius: 6px;
-      }
+<!-- IMAGE -->
+<section id="image">
+<h2>6. Image</h2>
+<label>INPUT</label>
+<pre>&lt;img src="https://via.placeholder.com/120"&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><img src="https://via.placeholder.com/120" title="Sample Image"></div>
+</section>
 
-      h2 {
-        color: #1f2933;
-        margin-bottom: 10px;
-      }
+<!-- LIST -->
+<section id="list">
+<h2>7. List</h2>
+<label>INPUT</label>
+<pre>&lt;ul&gt;&lt;li&gt;HTML&lt;/li&gt;&lt;li&gt;CSS&lt;/li&gt;&lt;/ul&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><ul><li>HTML</li><li>CSS</li></ul></div>
+</section>
 
-      label {
-        font-weight: bold;
-        display: block;
-        margin-top: 10px;
-      }
+<!-- TABLE -->
+<section id="table">
+<h2>8. Table</h2>
+<label>INPUT</label>
+<pre>&lt;table border="1"&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amit&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">
+<table border="1"><tr><th>Name</th></tr><tr><td>Amit</td></tr></table>
+</div>
+</section>
 
-      pre {
-        background: #111;
-        color: #0f0;
-        padding: 15px;
-        border-radius: 4px;
-        overflow: auto;
-      }
+<!-- FORM -->
+<section id="form">
+<h2>9. Form</h2>
+<label>INPUT</label>
+<pre>&lt;form&gt;...&lt;/form&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">
+<label for="username">Username:</label>
+<input type="text" id="username" placeholder="Enter username">
+<br><br>
+<label for="submitBtn">Submit:</label>
+<button id="submitBtn">Submit</button>
+</div>
+</section>
 
-      .output {
-        background: #eef2f7;
-        padding: 12px 20px;
-        margin-top: 8px;
-        border-left: 5px solid #1f2933;
-      }
+<!-- INPUT TYPES -->
+<section id="input">
+<h2>10. Input Types</h2>
+<label>OUTPUT</label>
+<div class="output">
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="Enter email"><br><br>
 
-      footer {
-        background: #1f2933;
-        color: white;
-        text-align: center;
-        padding: 15px;
-      }
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob">
+</div>
+</section>
 
-      html {
-        scroll-behavior: smooth;
-      }
+<!-- LAYOUT -->
+<section id="layout">
+<h2>11. Div & Span</h2>
+<label>INPUT</label>
+<pre>&lt;div&gt;Block&lt;/div&gt; &lt;span&gt;Inline&lt;/span&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><div>Block</div><span>Inline</span></div>
+</section>
 
-      section {
-        scroll-margin-top: 90px;
-      }
-    </style>
-  </head>
+<!-- SEMANTIC -->
+<section id="semantic">
+<h2>12. Semantic Tags</h2>
+<label>INPUT</label>
+<pre>&lt;header&gt;Header&lt;/header&gt; &lt;footer&gt;Footer&lt;/footer&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><header>Header</header><footer>Footer</footer></div>
+</section>
 
-  <body>
-    <header>
-      <h1>HTML Tutorial for Students</h1>
-      <p>Input & Output Based Learning</p>
-      <p>github.shivampatanwar.com/html_tutorial</p>
-    </header>
+<!-- MEDIA -->
+<section id="media">
+<h2>13. Audio & Video</h2>
+<label>INPUT</label>
+<pre>&lt;audio controls&gt;&lt;/audio&gt; &lt;video controls width="150"&gt;&lt;/video&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><audio controls></audio> <video controls width="150"></video></div>
+</section>
 
-    <!-- ✅ NAVIGATION BAR -->
-    <nav>
-      <a href="#basic">Basic</a>
-      <a href="#heading">Heading</a>
-      <a href="#paragraph">Paragraph</a>
-      <a href="#formatting">Formatting</a>
-      <a href="#link">Link</a>
-      <a href="#image">Image</a>
-      <a href="#list">List</a>
-      <a href="#table">Table</a>
-      <a href="#form">Form</a>
-      <a href="#layout">Layout</a>
-      <a href="#media">Media</a>
-      <a href="#meta">Meta</a>
-    </nav>
+<!-- IFRAME -->
+<section id="iframe">
+<h2>14. Iframe</h2>
+<label>INPUT</label>
+<pre>&lt;iframe src="https://example.com" width="250"&gt;&lt;/iframe&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><iframe src="https://example.com" width="250" title="ttgdsf"></iframe></div>
+</section>
 
-    <!-- ================= CONTENT ================= -->
+<!-- META -->
+<section id="meta">
+<h2>15. Meta Tag</h2>
+<label>INPUT</label>
+<pre>&lt;meta charset="UTF-8"&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">No visible output</div>
+</section>
 
-    <!-- BASIC -->
-    <section id="basic">
-      <h2>1. Basic HTML</h2>
-      <label>INPUT</label>
-      <pre>&lt;body&gt;Hello World&lt;/body&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output">Hello World</div>
-    </section>
+<!-- SEO -->
+<section id="seo">
+<h2>16. SEO</h2>
+<label>INPUT</label>
+<pre>&lt;meta name="description"&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">Visible in Google search preview</div>
+</section>
 
-    <!-- HEADING -->
-    <section id="heading">
-      <h2>2. Headings</h2>
-      <label>INPUT</label>
-      <pre>
-            &lt;h1&gt;Heading 1&lt;/h1&gt;
-            &lt;h2&gt;Heading 2&lt;/h2&gt;
-        </pre
-      >
-      <label>OUTPUT</label>
-      <div class="output">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-      </div>
-    </section>
+<!-- RESPONSIVE -->
+<section id="responsive">
+<h2>17. Responsive</h2>
+<label>INPUT</label>
+<pre>&lt;meta name="viewport"&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">Adjusts page on mobile</div>
+</section>
 
-    <!-- PARAGRAPH -->
-    <section id="paragraph">
-      <h2>3. Paragraph</h2>
-      <label>INPUT</label>
-      <pre>&lt;p&gt;This is paragraph&lt;/p&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output">
-        <p>This is paragraph</p>
-      </div>
-    </section>
+<!-- DESCRIPTION LIST -->
+<section id="desc-list">
+<h2>18. Description List</h2>
+<label>INPUT</label>
+<pre>&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Markup&lt;/dd&gt;&lt;/dl&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><dl><dt>HTML</dt><dd>Markup</dd></dl></div>
+</section>
 
-    <!-- FORMATTING -->
-    <section id="formatting">
-      <h2>4. Formatting</h2>
-      <label>INPUT</label>
-      <pre>&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italic&lt;/i&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output"><b>Bold</b> <i>Italic</i></div>
-    </section>
+<!-- SELECT -->
+<section id="select">
+<h2>19. Select Dropdown</h2>
+<label>INPUT</label>
+<pre>&lt;select&gt;&lt;option&gt;India&lt;/option&gt;&lt;/select&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><select title="ffg"><option>India</option></select></div>
+</section>
 
-    <!-- LINK -->
-    <section id="link">
-      <h2>5. Hyperlink</h2>
-      <label>INPUT</label>
-      <pre>&lt;a href="#"&gt;Click Here&lt;/a&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output"><a href="#">Click Here</a></div>
-    </section>
+<!-- DATALIST -->
+<section id="datalist">
+<h2>20. Datalist</h2>
+<label>INPUT</label>
+<pre>&lt;input list="b"&gt;&lt;datalist id="b"&gt;&lt;option value="Chrome"&gt;&lt;/datalist&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">
+<label for="browser">Choose Browser:</label>
+<input id="browser" list="b">
+<datalist id="b"><option value="Chrome"></datalist>
+</div>
+</section>
 
-    <!-- IMAGE -->
-    <section id="image">
-      <h2>6. Image</h2>
-      <label>INPUT</label>
-      <pre>&lt;img src="https://via.placeholder.com/120"&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output">
-        <img src="https://via.placeholder.com/120" title="4" />
-      </div>
-    </section>
+<!-- FIELDSET -->
+<section id="fieldset">
+<h2>21. Fieldset</h2>
+<label>INPUT</label>
+<pre>&lt;fieldset&gt;&lt;legend&gt;Login&lt;/legend&gt;&lt;input&gt;&lt;/fieldset&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">
+<fieldset>
+<legend>Login</legend>
+<label for="loginUser">Username:</label>
+<input id="loginUser">
+</fieldset>
+</div>
+</section>
 
-    <!-- LIST -->
-    <section id="list">
-      <h2>7. List</h2>
-      <label>INPUT</label>
-      <pre>
-            &lt;ul&gt;
-            &lt;li&gt;HTML&lt;/li&gt;
-            &lt;li&gt;CSS&lt;/li&gt;
-            &lt;/ul&gt;
-        </pre
-      >
-      <label>OUTPUT</label>
-      <div class="output">
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-    </section>
+<!-- VALIDATION -->
+<section id="validation">
+<h2>22. Required Validation</h2>
+<label>INPUT</label>
+<pre>&lt;input required&gt;</pre>
+<label>OUTPUT</label>
+<div class="output">
+<label for="req">Required Field:</label>
+<input id="req" required>
+</div>
+</section>
 
-    <!-- TABLE -->
-    <section id="table">
-      <h2>8. Table</h2>
-      <label>INPUT</label>
-      <pre>
-            &lt;table border="1"&gt;
-            &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
-            &lt;tr&gt;&lt;td&gt;Amit&lt;/td&gt;&lt;/tr&gt;
-            &lt;/table&gt;
-        </pre
-      >
-      <label>OUTPUT</label>
-      <div class="output">
-        <table border="1">
-          <tr>
-            <th>Name</th>
-          </tr>
-          <tr>
-            <td>Amit</td>
-          </tr>
-        </table>
-      </div>
-    </section>
+<!-- PROGRESS -->
+<section id="progress">
+<h2>23. Progress</h2>
+<label>INPUT</label>
+<pre>&lt;progress value="60" max="100"&gt;&lt;/progress&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><progress value="60" max="100"></progress></div>
+</section>
 
-    <!-- FORM -->
-    <section id="form">
-      <h2>9. Input Field</h2>
-      <label>INPUT</label>
-      <pre>&lt;input type="text" placeholder="Enter Name"&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output"><input type="text" placeholder="Enter Name" /></div>
-    </section>
+<!-- DETAILS -->
+<section id="details">
+<h2>24. Details</h2>
+<label>INPUT</label>
+<pre>&lt;details&gt;&lt;summary&gt;Click&lt;/summary&gt;Hidden&lt;/details&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><details><summary>Click</summary>Hidden</details></div>
+</section>
 
-    <!-- LAYOUT -->
-    <section id="layout">
-      <h2>10. Div & Span</h2>
-      <label>INPUT</label>
-      <pre>&lt;div&gt;Block&lt;/div&gt; &lt;span&gt;Inline&lt;/span&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output">
-        <div>Block</div>
-        <span>Inline</span>
-      </div>
-    </section>
+<!-- CANVAS -->
+<section id="canvas">
+<h2>25. Canvas</h2>
+<label>INPUT</label>
+<pre>&lt;canvas width="150" height="80" style="border:1px solid"&gt;&lt;/canvas&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><canvas width="150" height="80" style="border:1px solid"></canvas></div>
+</section>
 
-    <!-- MEDIA -->
-    <section id="media">
-      <h2>11. Audio & Video</h2>
-      <label>INPUT</label>
-      <pre>
-            &lt;audio controls&gt;&lt;/audio&gt;
-            &lt;video width="200" controls&gt;&lt;/video&gt;
-        </pre
-      >
-      <label>OUTPUT</label>
-      <div class="output">
-        <audio controls></audio><br />
-        <video width="200" controls></video>
-      </div>
-    </section>
+<!-- SVG -->
+<section id="svg">
+<h2>26. SVG</h2>
+<label>INPUT</label>
+<pre>&lt;svg width="80" height="50"&gt;&lt;circle cx="25" cy="25" r="20" fill="red"/&gt;&lt;/svg&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><svg width="80" height="50"><circle cx="25" cy="25" r="20" fill="red"/></svg></div>
+</section>
 
-    <!-- META -->
-    <section id="meta">
-      <h2>12. Meta Tag</h2>
-      <label>INPUT</label>
-      <pre>&lt;meta charset="UTF-8"&gt;</pre>
-      <label>OUTPUT</label>
-      <div class="output">No visible output</div>
-    </section>
+<!-- ENTITIES -->
+<section id="entities">
+<h2>27. HTML Entities</h2>
+<label>INPUT</label>
+<pre>&amp;lt; &amp;copy;</pre>
+<label>OUTPUT</label>
+<div class="output">&lt; ©</div>
+</section>
 
-    <footer>
-      <p>© 2026 Shivam Patanwar | HTML Student Tutorial</p>
-    </footer>
-  </body>
+<!-- EDITABLE -->
+<section id="editable">
+<h2>28. Content Editable</h2>
+<label>INPUT</label>
+<pre>&lt;p contenteditable="true"&gt;Edit Me&lt;/p&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><p contenteditable="true">Edit Me</p></div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+<h2>29. Download</h2>
+<label>INPUT</label>
+<pre>&lt;a href="#" download&gt;Download&lt;/a&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><a href="#" download>Download</a></div>
+</section>
+
+<!-- TARGET -->
+<section id="target">
+<h2>30. Target</h2>
+<label>INPUT</label>
+<pre>&lt;a href="#" target="_blank"&gt;New Tab&lt;/a&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><a href="#" target="_blank">New Tab</a></div>
+</section>
+
+<!-- PRE -->
+<section id="pre">
+<h2>31. Preformatted</h2>
+<label>INPUT</label>
+<pre>&lt;pre&gt;Line 1
+   Line 2&lt;/pre&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><pre>Line 1
+   Line 2</pre></div>
+</section>
+
+<!-- CODE -->
+<section id="code">
+<h2>32. Code Tag</h2>
+<label>INPUT</label>
+<pre>&lt;code&gt;console.log()&lt;/code&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><code>console.log()</code></div>
+</section>
+
+<!-- TIME -->
+<section id="time">
+<h2>33. Time Tag</h2>
+<label>INPUT</label>
+<pre>&lt;time&gt;10:30 AM&lt;/time&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><time>10:30 AM</time></div>
+</section>
+
+<!-- MARK -->
+<section id="mark">
+<h2>34. Mark Tag</h2>
+<label>INPUT</label>
+<pre>&lt;mark&gt;Highlight&lt;/mark&gt;</pre>
+<label>OUTPUT</label>
+<div class="output"><mark>Highlight</mark></div>
+</section>
+
+<footer>
+<p>© 2026 Shivam Patanwar | HTML Tutorial</p>
+</footer>
+
+</body>
 </html>
